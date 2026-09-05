@@ -4,13 +4,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Behrooz Sanat</title>
+<title>بهروز صنعت | قالب‌سازی فلزی و جوش‌کاری صنعتی برای قطعات بتنی</title>
+<meta name="description" content="بهروز صنعت، طراحی و ساخت قالب‌های فلزی دقیق برای قطعات بتنی پیش‌ساخته، با جوش‌کاری صنعتی و اجرای سفارشی بر اساس نقشه‌ی کارفرما.">
+<!-- COMMENT: اگه اسم واقعی کسب‌وکار یا شهر فعالیتتون فرق داره، عنوان بالا و توضیحات رو بر همون اساس دقیق‌تر کن (مثلاً اضافه‌کردن اسم شهر به description کمک زیادی به سئوی محلی می‌کنه) -->
+
+<!-- برای اینکه لینک سایت وقتی توی تلگرام/واتساپ به اشتراک گذاشته میشه خوب نمایش داده بشه -->
+<meta property="og:title" content="بهروز صنعت | قالب‌سازی فلزی و جوش‌کاری صنعتی">
+<meta property="og:description" content="طراحی و ساخت قالب‌های فلزی دقیق برای قطعات بتنی پیش‌ساخته، با جوش‌کاری صنعتی و اجرای سفارشی.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fa_IR">
+<!-- COMMENT: وقتی دامنه‌ی نهایی مشخص شد، این خط رو هم اضافه کن: <link rel="canonical" href="https://دامنه‌ی-خودت.ir/"> -->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-<link rel="title icon" type="image/png" href="{% static 'media/icon.png' %}">
-
 <link rel="stylesheet" href="{% static 'style.css' %}">
+
+<!-- این بخش به گوگل میگه این سایت یه کسب‌وکار واقعیه، اسم و نوع فعالیتش چیه -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "بهروز صنعت",
+  "description": "قالب‌سازی فلزی و جوش‌کاری صنعتی برای تولید قطعات بتنی پیش‌ساخته",
+  "areaServed": "IR"
+}
+</script>
+<!-- COMMENT: اگه آدرس، تلفن و شهر دقیق کارگاه رو داری، بگو تا این بخش رو کامل‌تر کنم (فیلدهای address، telephone و...) — این کار سئوی محلی رو خیلی قوی‌تر می‌کنه -->
 </head>
 <body>
 
@@ -42,11 +61,11 @@
     <div class="hero-inner">
       <p class="hero-eyebrow">قالب‌های فلزی برای صنعت پیش‌ساخته بتنی</p>
       <!-- COMMENT: متن هیرو رو با جمله‌ی واقعی خودت/بابات جایگزین کن. این فقط نمونه‌ست -->
-      <h1 class="hero-title">از فولاد تا قالب<br>از قالب تا قطعه‌ی بتنی</h1>
+      <h1 class="hero-title">از فولاد تا قالب،<br>از قالب تا قطعه‌ی بتنی.</h1>
       <p class="hero-desc">
         <!-- COMMENT: یک پاراگراف کوتاه (۲-۳ خط) درباره‌ی کارگاه، سابقه‌ی کاری، و نوع سفارش‌هایی که قبول می‌کنید بنویس -->
         طراحی و ساخت قالب‌های فلزی دقیق برای قطعات بتنی پیش‌ساخته، با جوش‌کاری صنعتی و اجرای سفارشی بر اساس نقشه‌ی کارفرما.
-      </h1>
+      </p>
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">دیدن پروژه‌ها</a>
         <a href="#contact" class="btn btn-ghost">ثبت سفارش</a>
@@ -72,15 +91,15 @@
       <div class="about-stats">
         <!-- COMMENT: عددهای زیر رو با آمار واقعی جایگزین کن (مثلا سال تاسیس، تعداد پروژه، و ...) -->
         <div class="stat">
-          <span class="stat-num">بیش از ۲۵</span>
+          <span class="stat-num">بیش از 25</span>
           <span class="stat-label">سال سابقه‌ی کار</span>
         </div>
         <div class="stat">
-          <span class="stat-num">بیش از ۱۰۰</span>
+          <span class="stat-num">بیش از 100 ها</span>
           <span class="stat-label">پروژه‌ی تکمیل‌شده</span>
         </div>
         <div class="stat">
-          <span class="stat-num">۱۰</span>
+          <span class="stat-num">10</span>
           <span class="stat-label">مشتری و کارفرما</span>
         </div>
       </div>
@@ -91,7 +110,7 @@
   <section id="projects" class="projects">
     <div class="projects-inner">
       <h2 class="section-title">پروژه‌ها</h2>
-      <p class="section-sub">برای مشاهده جزئیات بیشتر هر پروژه، روی آن کلیک کنید</p>
+      <p class="section-sub">روی هر پروژه کلیک کن تا عکس‌ها و فیلم‌های مربوط به آن را ببینی.</p>
 
       <!--
         COMMENT (مهم):
@@ -120,7 +139,7 @@
           data-title="عنوان پروژه دو"
           data-desc="توضیح کامل پروژه دو را اینجا بنویس."
           data-media="{% static 'media/project2-1.jpg' %},{% static 'media/project2-video.mp4' %}">
-          <img class="card-thumb" src="{% static 'media/1.jpg' %}" alt="عنوان پروژه دو">
+          <img class="card-thumb" src="{% static 'media/project2-1.jpg' %}" alt="عنوان پروژه دو">
           <div class="card-body">
             <h3>عنوان پروژه دو</h3>
             <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
@@ -131,7 +150,7 @@
           data-title="عنوان پروژه سه"
           data-desc="توضیح کامل پروژه سه را اینجا بنویس."
           data-media="{% static 'media/project3-1.jpg' %}">
-          <img class="card-thumb" src="{% static 'media/1.jpg' %}" alt="عنوان پروژه سه">
+          <img class="card-thumb" src="{% static 'media/project3-1.jpg' %}" alt="عنوان پروژه سه">
           <div class="card-body">
             <h3>عنوان پروژه سه</h3>
             <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
@@ -143,7 +162,7 @@
         <article class="project-card hidden"
           data-title="عنوان پروژه چهار"
           data-desc="توضیح کامل پروژه چهار را اینجا بنویس."
-          data-media="{% static 'media/1.jpg' %}">
+          data-media="{% static 'media/project4-1.jpg' %}">
           <img class="card-thumb" src="{% static 'media/project4-1.jpg' %}" alt="عنوان پروژه چهار">
           <div class="card-body">
             <h3>عنوان پروژه چهار</h3>
@@ -162,10 +181,8 @@
           </div>
         </article>
 
-
-
-
       </div>
+
       <button class="btn btn-ghost load-more" id="loadMoreBtn">نمایش پروژه‌های بیشتر</button>
     </div>
   </section>
@@ -189,14 +206,14 @@
         </div>
 
         <div class="form-row">
-          <label for="phone">شماره تلفن <span class="req">*</span></label>
-          <input type="tel" id="phone" name="phone" required inputmode="numeric">
-          <span class="error-msg" data-for="phone"></span>
+          <label for="projectDesc">توضیح پروژه</label>
+          <textarea id="projectDesc" name="projectDesc" rows="4"></textarea>
         </div>
 
         <div class="form-row">
-          <label for="projectDesc">توضیح پروژه</label>
-          <textarea id="projectDesc" name="projectDesc" rows="4"></textarea>
+          <label for="phone">شماره تلفن <span class="req">*</span></label>
+          <input type="tel" id="phone" name="phone" required inputmode="numeric">
+          <span class="error-msg" data-for="phone"></span>
         </div>
 
         <div class="form-row">
@@ -215,15 +232,9 @@
 
 </main>
 
-
 <footer class="site-footer">
-  <div class="footer-contact">
-    شماره تماس: <a href="tel:+989154002651">۰۹۱۵۴۰۰۲۶۵۱</a><br>
-    {% comment %} <a href="mailto:info@example.com">info@example.com</a> {% endcomment %}
-    {% comment %} <a href="https://instagram.com/your_page" target="_blank" rel="noopener">اینستاگرام</a> {% endcomment %}
-    <span>آدرس: مشهد، بلوار شاهنامه، شاهنامه ۷۹</span>
-    <p>© <span id="year"></span> تقدیسی — تمام حقوق محفوظ است</p>
-  </div>
+  <!-- COMMENT: اطلاعات تماس واقعی (آدرس، شماره، شبکه‌های اجتماعی) رو اینجا بذار -->
+  <p>© <span id="year"></span> [ نام کسب‌وکار ] — تمام حقوق محفوظ است.</p>
 </footer>
 
 <!-- ============ لایت‌باکس گالری ============ -->
@@ -237,8 +248,6 @@
   </div>
   <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="بعدی">›</button>
 </div>
-
-
 
 <script src="{% static 'script.js' %}"></script>
 </body>
