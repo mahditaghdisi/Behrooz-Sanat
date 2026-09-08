@@ -8,7 +8,7 @@
 <!-- COMMENT: عنوان بالا رو با نام واقعی کسب‌وکار (مثلا "قالب‌سازی فلزی [نام بابا]") جایگزین کن -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
 
@@ -777,6 +777,6 @@
   <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="بعدی">›</button>
 </div>
 
-<script src="script.js"></script>
+<script src="{% static 'script.js' %}"></script>
 </body>
 </html>
