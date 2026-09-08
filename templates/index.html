@@ -4,33 +4,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="{% static 'media/icon.png' %}">
-<title>بهروز صنعت</title>
-<meta name="description" content="بهروز صنعت، طراحی و ساخت قالب‌های فلزی دقیق برای قطعات بتنی پیش‌ساخته، با جوش‌کاری صنعتی و اجرای سفارشی بر اساس نقشه‌ی کارفرما.">
-<!-- COMMENT: اگه اسم واقعی کسب‌وکار یا شهر فعالیتتون فرق داره، عنوان بالا و توضیحات رو بر همون اساس دقیق‌تر کن (مثلاً اضافه‌کردن اسم شهر به description کمک زیادی به سئوی محلی می‌کنه) -->
-
-<!-- برای اینکه لینک سایت وقتی توی تلگرام/واتساپ به اشتراک گذاشته میشه خوب نمایش داده بشه -->
-<meta property="og:title" content="بهروز صنعت">
-<meta property="og:description" content="طراحی و ساخت قالب‌های فلزی دقیق برای قطعات بتنی پیش‌ساخته، با جوش‌کاری صنعتی و اجرای سفارشی.">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="fa_IR">
-<!-- COMMENT: وقتی دامنه‌ی نهایی مشخص شد، این خط رو هم اضافه کن: <link rel="canonical" href="https://دامنه‌ی-خودت.ir/"> -->
-
+<title>Behrooz Sanat</title>
+<!-- COMMENT: عنوان بالا رو با نام واقعی کسب‌وکار (مثلا "قالب‌سازی فلزی [نام بابا]") جایگزین کن -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{% static 'style.css' %}">
-
-<!-- این بخش به گوگل میگه این سایت یه کسب‌وکار واقعیه، اسم و نوع فعالیتش چیه -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "بهروز صنعت",
-  "description": "قالب‌سازی فلزی و جوش‌کاری صنعتی برای تولید قطعات بتنی پیش‌ساخته",
-  "areaServed": "IR"
-}
-</script>
-<!-- COMMENT: اگه آدرس، تلفن و شهر دقیق کارگاه رو داری، بگو تا این بخش رو کامل‌تر کنم (فیلدهای address، telephone و...) — این کار سئوی محلی رو خیلی قوی‌تر می‌کنه -->
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -66,7 +44,7 @@
       <p class="hero-desc">
         <!-- COMMENT: یک پاراگراف کوتاه (۲-۳ خط) درباره‌ی کارگاه، سابقه‌ی کاری، و نوع سفارش‌هایی که قبول می‌کنید بنویس -->
         طراحی و ساخت قالب‌های فلزی دقیق برای قطعات بتنی پیش‌ساخته، با جوش‌کاری صنعتی و اجرای سفارشی بر اساس نقشه‌ی کارفرما.
-      </p>
+      </h1>
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">دیدن پروژه‌ها</a>
         <a href="#contact" class="btn btn-ghost">ثبت سفارش</a>
@@ -126,58 +104,606 @@
       <div class="projects-grid" id="projectsGrid">
 
         <article class="project-card"
-          data-title="عنوان پروژه یک"
-          data-desc="توضیح کامل پروژه یک را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
-          data-media="{% static 'media/project1-1.jpg' %},{% static 'media/project1-2.jpg' %}">
-          <img class="card-thumb" src="{% static 'media/1.jpg' %}" alt="عنوان پروژه یک">
+          data-title="پروژه شماره 1"
+          data-desc="توضیح پروژه شماره 1 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(1).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(1).jpg' %}" alt="پروژه شماره 1">
           <div class="card-body">
-            <h3>عنوان پروژه یک</h3>
+            <h3>پروژه شماره 1</h3>
             <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
           </div>
         </article>
 
         <article class="project-card"
-          data-title="عنوان پروژه دو"
-          data-desc="توضیح کامل پروژه دو را اینجا بنویس."
-          data-media="{% static 'media/project2-1.jpg' %},{% static 'media/project2-video.mp4' %}">
-          <img class="card-thumb" src="{% static 'media/project2-1.jpg' %}" alt="عنوان پروژه دو">
+          data-title="پروژه شماره 2"
+          data-desc="توضیح پروژه شماره 2 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(2).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(2).jpg' %}" alt="پروژه شماره 2">
           <div class="card-body">
-            <h3>عنوان پروژه دو</h3>
+            <h3>پروژه شماره 2</h3>
             <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
           </div>
         </article>
 
         <article class="project-card"
-          data-title="عنوان پروژه سه"
-          data-desc="توضیح کامل پروژه سه را اینجا بنویس."
-          data-media="{% static 'media/project3-1.jpg' %}">
-          <img class="card-thumb" src="{% static 'media/project3-1.jpg' %}" alt="عنوان پروژه سه">
+          data-title="پروژه شماره 3"
+          data-desc="توضیح پروژه شماره 3 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(3).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(3).jpg' %}" alt="پروژه شماره 3">
           <div class="card-body">
-            <h3>عنوان پروژه سه</h3>
+            <h3>پروژه شماره 3</h3>
             <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
           </div>
         </article>
 
-        <!-- COMMENT: از همین الگو برای بقیه‌ی پروژه‌ها کپی بگیر. برای پروژه‌های بعد از ششمی، کلاس رو project-card hidden بذار -->
-
-        <article class="project-card hidden"
-          data-title="عنوان پروژه چهار"
-          data-desc="توضیح کامل پروژه چهار را اینجا بنویس."
-          data-media="{% static 'media/project4-1.jpg' %}">
-          <img class="card-thumb" src="{% static 'media/project4-1.jpg' %}" alt="عنوان پروژه چهار">
+        <article class="project-card"
+          data-title="پروژه شماره 4"
+          data-desc="توضیح پروژه شماره 4 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(4).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(4).jpg' %}" alt="پروژه شماره 4">
           <div class="card-body">
-            <h3>عنوان پروژه چهار</h3>
+            <h3>پروژه شماره 4</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card"
+          data-title="پروژه شماره 5"
+          data-desc="توضیح پروژه شماره 5 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(5).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(5).jpg' %}" alt="پروژه شماره 5">
+          <div class="card-body">
+            <h3>پروژه شماره 5</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card"
+          data-title="پروژه شماره 6"
+          data-desc="توضیح پروژه شماره 6 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(6).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(6).jpg' %}" alt="پروژه شماره 6">
+          <div class="card-body">
+            <h3>پروژه شماره 6</h3>
             <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
           </div>
         </article>
 
         <article class="project-card hidden"
-          data-title="عنوان پروژه چهار"
-          data-desc="توضیح کامل پروژه چهار را اینجا بنویس."
-          data-media="{% static 'media/project4-1.jpg' %}">
-          <img class="card-thumb" src="{% static 'media/project4-1.jpg' %}" alt="عنوان پروژه چهار">
+          data-title="پروژه شماره 7"
+          data-desc="توضیح پروژه شماره 7 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(7).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(7).jpg' %}" alt="پروژه شماره 7">
           <div class="card-body">
-            <h3>عنوان پروژه چهار</h3>
+            <h3>پروژه شماره 7</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 8"
+          data-desc="توضیح پروژه شماره 8 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(8).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(8).jpg' %}" alt="پروژه شماره 8">
+          <div class="card-body">
+            <h3>پروژه شماره 8</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 9"
+          data-desc="توضیح پروژه شماره 9 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(9).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(9).jpg' %}" alt="پروژه شماره 9">
+          <div class="card-body">
+            <h3>پروژه شماره 9</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 10"
+          data-desc="توضیح پروژه شماره 10 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(10).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(10).jpg' %}" alt="پروژه شماره 10">
+          <div class="card-body">
+            <h3>پروژه شماره 10</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 11"
+          data-desc="توضیح پروژه شماره 11 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(11).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(11).jpg' %}" alt="پروژه شماره 11">
+          <div class="card-body">
+            <h3>پروژه شماره 11</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 12"
+          data-desc="توضیح پروژه شماره 12 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(12).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(12).jpg' %}" alt="پروژه شماره 12">
+          <div class="card-body">
+            <h3>پروژه شماره 12</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 13"
+          data-desc="توضیح پروژه شماره 13 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(13).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(13).jpg' %}" alt="پروژه شماره 13">
+          <div class="card-body">
+            <h3>پروژه شماره 13</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 14"
+          data-desc="توضیح پروژه شماره 14 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(14).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(14).jpg' %}" alt="پروژه شماره 14">
+          <div class="card-body">
+            <h3>پروژه شماره 14</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 15"
+          data-desc="توضیح پروژه شماره 15 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(15).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(15).jpg' %}" alt="پروژه شماره 15">
+          <div class="card-body">
+            <h3>پروژه شماره 15</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 16"
+          data-desc="توضیح پروژه شماره 16 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(16).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(16).jpg' %}" alt="پروژه شماره 16">
+          <div class="card-body">
+            <h3>پروژه شماره 16</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 17"
+          data-desc="توضیح پروژه شماره 17 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(17).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(17).jpg' %}" alt="پروژه شماره 17">
+          <div class="card-body">
+            <h3>پروژه شماره 17</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 18"
+          data-desc="توضیح پروژه شماره 18 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(18).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(18).jpg' %}" alt="پروژه شماره 18">
+          <div class="card-body">
+            <h3>پروژه شماره 18</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 19"
+          data-desc="توضیح پروژه شماره 19 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(19).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(19).jpg' %}" alt="پروژه شماره 19">
+          <div class="card-body">
+            <h3>پروژه شماره 19</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 20"
+          data-desc="توضیح پروژه شماره 20 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(20).JPG' %}">
+          <img class="card-thumb" src="{% static 'media/(20).JPG' %}" alt="پروژه شماره 20">
+          <div class="card-body">
+            <h3>پروژه شماره 20</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 21"
+          data-desc="توضیح پروژه شماره 21 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(21).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(21).jpg' %}" alt="پروژه شماره 21">
+          <div class="card-body">
+            <h3>پروژه شماره 21</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 22"
+          data-desc="توضیح پروژه شماره 22 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(22).JPG' %}">
+          <img class="card-thumb" src="{% static 'media/(22).JPG' %}" alt="پروژه شماره 22">
+          <div class="card-body">
+            <h3>پروژه شماره 22</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 23"
+          data-desc="توضیح پروژه شماره 23 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(23).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(23).jpg' %}" alt="پروژه شماره 23">
+          <div class="card-body">
+            <h3>پروژه شماره 23</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 24"
+          data-desc="توضیح پروژه شماره 24 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(24).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(24).jpg' %}" alt="پروژه شماره 24">
+          <div class="card-body">
+            <h3>پروژه شماره 24</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 25"
+          data-desc="توضیح پروژه شماره 25 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(25).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(25).jpg' %}" alt="پروژه شماره 25">
+          <div class="card-body">
+            <h3>پروژه شماره 25</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 26"
+          data-desc="توضیح پروژه شماره 26 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(26).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(26).jpg' %}" alt="پروژه شماره 26">
+          <div class="card-body">
+            <h3>پروژه شماره 26</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 27"
+          data-desc="توضیح پروژه شماره 27 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(27).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(27).jpg' %}" alt="پروژه شماره 27">
+          <div class="card-body">
+            <h3>پروژه شماره 27</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 28"
+          data-desc="توضیح پروژه شماره 28 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(28).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(28).jpg' %}" alt="پروژه شماره 28">
+          <div class="card-body">
+            <h3>پروژه شماره 28</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 29"
+          data-desc="توضیح پروژه شماره 29 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(29).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(29).jpg' %}" alt="پروژه شماره 29">
+          <div class="card-body">
+            <h3>پروژه شماره 29</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 30"
+          data-desc="توضیح پروژه شماره 30 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(30).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(30).jpg' %}" alt="پروژه شماره 30">
+          <div class="card-body">
+            <h3>پروژه شماره 30</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 31"
+          data-desc="توضیح پروژه شماره 31 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(31).JPG' %}">
+          <img class="card-thumb" src="{% static 'media/(31).JPG' %}" alt="پروژه شماره 31">
+          <div class="card-body">
+            <h3>پروژه شماره 31</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 32"
+          data-desc="توضیح پروژه شماره 32 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(32).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(32).jpg' %}" alt="پروژه شماره 32">
+          <div class="card-body">
+            <h3>پروژه شماره 32</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 33"
+          data-desc="توضیح پروژه شماره 33 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(33).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(33).jpg' %}" alt="پروژه شماره 33">
+          <div class="card-body">
+            <h3>پروژه شماره 33</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 34"
+          data-desc="توضیح پروژه شماره 34 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(34).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(34).jpg' %}" alt="پروژه شماره 34">
+          <div class="card-body">
+            <h3>پروژه شماره 34</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 35"
+          data-desc="توضیح پروژه شماره 35 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(35).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(35).jpg' %}" alt="پروژه شماره 35">
+          <div class="card-body">
+            <h3>پروژه شماره 35</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 36"
+          data-desc="توضیح پروژه شماره 36 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(36).JPG' %}">
+          <img class="card-thumb" src="{% static 'media/(36).JPG' %}" alt="پروژه شماره 36">
+          <div class="card-body">
+            <h3>پروژه شماره 36</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 37"
+          data-desc="توضیح پروژه شماره 37 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(37).JPG' %}">
+          <img class="card-thumb" src="{% static 'media/(37).JPG' %}" alt="پروژه شماره 37">
+          <div class="card-body">
+            <h3>پروژه شماره 37</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 38"
+          data-desc="توضیح پروژه شماره 38 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(38).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(38).jpg' %}" alt="پروژه شماره 38">
+          <div class="card-body">
+            <h3>پروژه شماره 38</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 39"
+          data-desc="توضیح پروژه شماره 39 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(39).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(39).jpg' %}" alt="پروژه شماره 39">
+          <div class="card-body">
+            <h3>پروژه شماره 39</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 40"
+          data-desc="توضیح پروژه شماره 40 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(40).JPG' %}">
+          <img class="card-thumb" src="{% static 'media/(40).JPG' %}" alt="پروژه شماره 40">
+          <div class="card-body">
+            <h3>پروژه شماره 40</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 41"
+          data-desc="توضیح پروژه شماره 41 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(41).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(41).jpg' %}" alt="پروژه شماره 41">
+          <div class="card-body">
+            <h3>پروژه شماره 41</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 42"
+          data-desc="توضیح پروژه شماره 42 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(42).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(42).jpg' %}" alt="پروژه شماره 42">
+          <div class="card-body">
+            <h3>پروژه شماره 42</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 43"
+          data-desc="توضیح پروژه شماره 43 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(43).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(43).jpg' %}" alt="پروژه شماره 43">
+          <div class="card-body">
+            <h3>پروژه شماره 43</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 44"
+          data-desc="توضیح پروژه شماره 44 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(44).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(44).jpg' %}" alt="پروژه شماره 44">
+          <div class="card-body">
+            <h3>پروژه شماره 44</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 45"
+          data-desc="توضیح پروژه شماره 45 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(45).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(45).jpg' %}" alt="پروژه شماره 45">
+          <div class="card-body">
+            <h3>پروژه شماره 45</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 46"
+          data-desc="توضیح پروژه شماره 46 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(46).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(46).jpg' %}" alt="پروژه شماره 46">
+          <div class="card-body">
+            <h3>پروژه شماره 46</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 47"
+          data-desc="توضیح پروژه شماره 47 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(47).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(47).jpg' %}" alt="پروژه شماره 47">
+          <div class="card-body">
+            <h3>پروژه شماره 47</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 48"
+          data-desc="توضیح پروژه شماره 48 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(48).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(48).jpg' %}" alt="پروژه شماره 48">
+          <div class="card-body">
+            <h3>پروژه شماره 48</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 49"
+          data-desc="توضیح پروژه شماره 49 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(49).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(49).jpg' %}" alt="پروژه شماره 49">
+          <div class="card-body">
+            <h3>پروژه شماره 49</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 50"
+          data-desc="توضیح پروژه شماره 50 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(50).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(50).jpg' %}" alt="پروژه شماره 50">
+          <div class="card-body">
+            <h3>پروژه شماره 50</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 51"
+          data-desc="توضیح پروژه شماره 51 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(51).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(51).jpg' %}" alt="پروژه شماره 51">
+          <div class="card-body">
+            <h3>پروژه شماره 51</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 52"
+          data-desc="توضیح پروژه شماره 52 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(52).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(52).jpg' %}" alt="پروژه شماره 52">
+          <div class="card-body">
+            <h3>پروژه شماره 52</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 53"
+          data-desc="توضیح پروژه شماره 53 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(53).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(53).jpg' %}" alt="پروژه شماره 53">
+          <div class="card-body">
+            <h3>پروژه شماره 53</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 54"
+          data-desc="توضیح پروژه شماره 54 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(54).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(54).jpg' %}" alt="پروژه شماره 54">
+          <div class="card-body">
+            <h3>پروژه شماره 54</h3>
+            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+          </div>
+        </article>
+
+        <article class="project-card hidden"
+          data-title="پروژه شماره 55"
+          data-desc="توضیح پروژه شماره 55 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
+          data-media="{% static 'media/(55).jpg' %}">
+          <img class="card-thumb" src="{% static 'media/(55).jpg' %}" alt="پروژه شماره 55">
+          <div class="card-body">
+            <h3>پروژه شماره 55</h3>
             <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
           </div>
         </article>
@@ -223,8 +749,9 @@
           <span class="error-msg" data-for="email"></span>
         </div>
 
-        <!-- COMMENT: منطق ارسال این فرم توی script.js داخل رویداد submit فرم (form.addEventListener('submit', ...)) نوشته شده
-             و الان مستقیم به /api/contact/ توی جنگو POST میشه. -->
+        <!-- COMMENT: در حال حاضر این فرم فقط سمت کلاینت اعتبارسنجی میشه و پیام موفقیت نشون میده.
+             وقتی بک‌اند جنگو رو وصل کردیم، اکشن این فرم (تابع handleSubmit در script.js) باید
+             یک درخواست POST به endpoint جنگو بفرسته. -->
         <button type="submit" class="btn btn-primary">ارسال درخواست</button>
         <p class="form-success" id="formSuccess" hidden>درخواست شما با موفقیت ثبت شد. به‌زودی با شما تماس می‌گیریم.</p>
       </form>
@@ -250,6 +777,6 @@
   <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="بعدی">›</button>
 </div>
 
-<script src="{% static 'script.js' %}"></script>
+<script src="script.js"></script>
 </body>
 </html>
