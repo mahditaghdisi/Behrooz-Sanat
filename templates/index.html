@@ -5,103 +5,129 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="{% static 'media/icon.png' %}">
-<title>Behrooz Sanat</title>
-<!-- COMMENT: عنوان بالا رو با نام واقعی کسب‌وکار (مثلا "قالب‌سازی فلزی [نام بابا]") جایگزین کن -->
+<title>بهروز صنعت | قالب‌سازی و جوش‌کاری</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
 
 <header class="site-header">
   <div class="nav-wrap">
-    <a href="#home" class="logo">
-      <!-- COMMENT: می‌تونی این متن رو با یه لوگوی SVG واقعی جایگزین کنی -->
-      <span class="logo-mark" aria-hidden="true"></span>
-      <span class="logo-text">قالب‌سازی و جوش‌کاری<br><small>بهروز صنعت</small></span>
+    <a href="#home" class="logo" aria-label="بهروز صنعت">
+      <span class="logo-mark" aria-hidden="true"><i></i></span>
+      <span class="logo-text">بهروز صنعت<small>قالب‌سازی و جوش‌کاری</small></span>
     </a>
-
     <nav class="main-nav" id="mainNav">
-      <a href="#home">خانه</a>
+      <a href="#home" class="active">خانه</a>
       <a href="#about">درباره ما</a>
+      <a href="#services">خدمات</a>
       <a href="#projects">پروژه‌ها</a>
       <a href="#contact">تماس با ما</a>
     </nav>
-
-    <button class="nav-toggle" id="navToggle" aria-label="باز و بسته کردن منو" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <a class="header-cta" href="#contact">ثبت سفارش</a>
+    <button class="nav-toggle" id="navToggle" aria-label="باز و بسته کردن منو" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
 
 <main>
-
-  <!-- ============ هیرو ============ -->
-  <section id="home" class="hero">
-    <div class="hero-inner">
-      <p class="hero-eyebrow">قالب‌های فلزی برای صنعت پیش‌ساخته بتنی</p>
-      <!-- COMMENT: متن هیرو رو با جمله‌ی واقعی خودت/بابات جایگزین کن. این فقط نمونه‌ست -->
-      <h1 class="hero-title">از فولاد تا قالب،<br>از قالب تا قطعه‌ی بتنی.</h1>
-      <p class="hero-desc">
-        <!-- COMMENT: یک پاراگراف کوتاه (۲-۳ خط) درباره‌ی کارگاه، سابقه‌ی کاری، و نوع سفارش‌هایی که قبول می‌کنید بنویس -->
-        طراحی و ساخت قالب‌های فلزی دقیق برای قطعات بتنی پیش‌ساخته، با جوش‌کاری صنعتی و اجرای سفارشی بر اساس نقشه‌ی کارفرما.
-      </h1>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">دیدن پروژه‌ها</a>
-        <a href="#contact" class="btn btn-ghost">ثبت سفارش</a>
+  <!-- HERO -->
+  <section id="home" class="hero" style="--hero-image:url('{% static 'media/(1).jpg' %}')">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <div class="hero-copy">
+        <p class="eyebrow">قالب‌سازی فلزی برای صنعت پیش‌ساخته بتنی</p>
+        <h1>از فولاد تا قالب،<br><strong>از قالب تا قطعه‌ی دقیق.</strong></h1>
+        <p class="hero-desc">طراحی و ساخت قالب‌های فلزی دقیق برای قطعات بتنی پیش‌ساخته، با جوش‌کاری صنعتی و اجرای سفارشی بر اساس نقشه‌ی کارفرما.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">دیدن پروژه‌ها <span>←</span></a>
+          <a href="#contact" class="btn btn-outline">ثبت سفارش</a>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <strong>25+</strong>
+        <span>سال تجربه<br>در صنعت</span>
       </div>
     </div>
-    <div class="hero-graphic" aria-hidden="true">
-      <div class="beam beam-1"></div>
-      <div class="beam beam-2"></div>
-      <div class="beam beam-3"></div>
-      <div class="spark"></div>
+    <div class="hero-scroll">اسکرول کنید <span></span></div>
+  </section>
+
+  <!-- FEATURE STRIP -->
+  <section class="feature-strip">
+    <div class="container feature-grid">
+      <div class="feature-item"><span class="feature-icon">✦</span><div><b>کیفیت و دوام</b><small>ساخت صنعتی با دقت بالا</small></div></div>
+      <div class="feature-item"><span class="feature-icon">▣</span><div><b>طراحی سفارشی</b><small>مطابق نقشه و نیاز پروژه</small></div></div>
+      <div class="feature-item"><span class="feature-icon">⌁</span><div><b>جوش‌کاری حرفه‌ای</b><small>اتصالات تمیز و مستحکم</small></div></div>
+      <div class="feature-item"><span class="feature-icon">◈</span><div><b>تحویل پروژه</b><small>پیگیری از ساخت تا اجرا</small></div></div>
     </div>
   </section>
 
-  <!-- ============ درباره ما ============ -->
-  <section id="about" class="about">
-    <div class="about-inner">
-      <h2 class="section-title">درباره کارگاه</h2>
-      <!-- COMMENT: اینجا داستان و سابقه‌ی کاری بابات رو بنویس: چند ساله فعالیت می‌کنه، چه نوع پروژه‌هایی انجام داده، چه امکاناتی توی کارگاه هست -->
-      <p class="about-text">
-        این کارگاه سال‌هاست در زمینه‌ی قالب‌سازی فلزی و جوش‌کاری صنعتی فعالیت می‌کند. قالب‌هایی که اینجا ساخته می‌شوند
-        برای ریخته‌گری بتن استفاده می‌شوند و به تولید قطعات پیش‌ساخته‌ی بتنی با دقت ابعادی بالا منجر می‌گردند.
-      </p>
-      <div class="about-stats">
-        <!-- COMMENT: عددهای زیر رو با آمار واقعی جایگزین کن (مثلا سال تاسیس، تعداد پروژه، و ...) -->
-        <div class="stat">
-          <span class="stat-num">بیش از 25</span>
-          <span class="stat-label">سال سابقه‌ی کار</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">بیش از 100 ها</span>
-          <span class="stat-label">پروژه‌ی تکمیل‌شده</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">10</span>
-          <span class="stat-label">مشتری و کارفرما</span>
-        </div>
+  <!-- ABOUT / CRAFTSMANSHIP -->
+  <section id="about" class="split-section section-dark">
+    <div class="container split-grid">
+      <div class="image-frame accent-frame">
+        <img src="{% static 'media/(2).jpg' %}" alt="نمونه کار قالب‌سازی">
+        <span class="frame-label">BEHROOZ SANAT / WORKSHOP</span>
+      </div>
+      <div class="split-copy">
+        <p class="eyebrow">درباره ما</p>
+        <h2>مهارت در ساخت،<br><strong>دقت در اجرا</strong></h2>
+        <p>این کارگاه سال‌هاست در زمینه‌ی قالب‌سازی فلزی و جوش‌کاری صنعتی فعالیت می‌کند. قالب‌هایی که اینجا ساخته می‌شوند برای ریخته‌گری بتن استفاده می‌شوند و به تولید قطعات پیش‌ساخته‌ی بتنی با دقت ابعادی بالا منجر می‌گردند.</p>
+        <p>از بررسی نقشه تا برش، مونتاژ، جوش‌کاری و آماده‌سازی نهایی، هر مرحله با تمرکز روی دوام، دقت و قابلیت استفاده‌ی مکرر قالب انجام می‌شود.</p>
+        <a href="#contact" class="text-link">درباره پروژه خود صحبت کنیم <span>←</span></a>
       </div>
     </div>
   </section>
 
-  <!-- ============ پروژه‌ها ============ -->
-  <section id="projects" class="projects">
-    <div class="projects-inner">
-      <h2 class="section-title">پروژه‌ها</h2>
-      <p class="section-sub">روی هر پروژه کلیک کن تا عکس‌ها و فیلم‌های مربوط به آن را ببینی.</p>
+  <section class="trusted-bar">
+    <div class="container trusted-inner">
+      <span>اعتماد ساخته می‌شود؛ با کیفیت، دقت و تحویل درست.</span>
+      <div class="trusted-lines"><b>PRECISION</b><b>CRAFT</b><b>RELIABILITY</b><b>INDUSTRIAL</b></div>
+    </div>
+  </section>
 
-      <!--
-        COMMENT (مهم):
-        هر پروژه یک <article class="project-card"> است.
-        - data-title: عنوان پروژه
-        - data-desc: توضیح کامل پروژه (که در لایت‌باکس نشان داده می‌شود)
-        - data-media: لیست عکس/ویدیوهای پروژه، جدا شده با کاما. برای عکس مسیر فایل عکس، برای ویدیو مسیر فایل ویدیو با پسوند mp4/webm بگذار.
-          مثال: data-media="media/proj1-1.jpg,media/proj1-2.jpg,media/proj1-video.mp4"
-        - تصویر داخل <img class="card-thumb"> هم باید عکس شاخص همون پروژه باشه (thumbnail)
-        - کارت‌های بعد از اولین ۶ تا، کلاس "project-card hidden" دارن و با دکمه‌ی "نمایش بیشتر" ظاهر میشن
-      -->
+  <section class="statement-section">
+    <div class="container statement-grid">
+      <div class="statement-copy">
+        <p class="eyebrow">رویکرد ما</p>
+        <h2>هر اتصال مهم است.<br><strong>هر قالب برای کار ساخته می‌شود.</strong></h2>
+        <p>هدف فقط ساخت یک قطعه فلزی نیست؛ قالب باید در محیط واقعی تولید، دقیق، قابل اعتماد و قابل استفاده‌ی مجدد باشد.</p>
+        <div class="check-list">
+          <div><span>✓</span><p><b>بررسی نیاز پروژه</b><small>ابعاد، کاربرد و شرایط تولید قبل از ساخت بررسی می‌شود.</small></p></div>
+          <div><span>✓</span><p><b>اجرای دقیق</b><small>برش، مونتاژ و جوش‌کاری با تمرکز بر دقت ابعادی.</small></p></div>
+          <div><span>✓</span><p><b>کنترل نهایی</b><small>قبل از تحویل، کیفیت ساخت و عملکرد قالب بررسی می‌شود.</small></p></div>
+        </div>
+      </div>
+      <div class="portrait-panel" style="background-image:url('{% static 'media/(3).jpg' %}')">
+        <div class="portrait-caption"><small>WORKSHOP</small><b>CRAFTED<br>TO PERFORM</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wide-banner" style="--banner-image:url('{% static 'media/(4).jpg' %}')">
+    <div class="wide-banner-overlay"></div>
+    <div class="container wide-banner-content"><span>WELDING / FORMING / FABRICATION</span><h2>آینده‌ی ساخت<br><strong>از کارگاه شروع می‌شود.</strong></h2></div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services-section section-dark">
+    <div class="container">
+      <div class="section-heading centered"><p class="eyebrow">خدمات ما</p><h2>راهکارهای صنعتی برای<br><strong>پروژه‌های شما</strong></h2><p>خدمات را می‌توانید بعداً با اطلاعات واقعی کارگاه و دسته‌بندی‌های موردنظر خودتان ویرایش کنید.</p></div>
+      <div class="services-grid">
+        <article class="service-card"><span>01</span><h3>ساخت قالب فلزی</h3><p>ساخت قالب‌های سفارشی برای قطعات بتنی پیش‌ساخته با تمرکز بر دقت و استحکام.</p><a href="#contact">مشاهده جزئیات ↗</a></article>
+        <article class="service-card"><span>02</span><h3>جوش‌کاری صنعتی</h3><p>اجرای اتصالات و سازه‌های فلزی با توجه به کاربرد، ابعاد و شرایط پروژه.</p><a href="#contact">مشاهده جزئیات ↗</a></article>
+        <article class="service-card"><span>03</span><h3>ساخت سفارشی</h3><p>تبدیل نقشه و نیاز کارفرما به محصول قابل ساخت و آماده‌ی استفاده در خط تولید.</p><a href="#contact">مشاهده جزئیات ↗</a></article>
+        <article class="service-card"><span>04</span><h3>اصلاح و بازسازی</h3><p>بررسی و اصلاح قالب‌ها و قطعات فلزی موجود برای افزایش عمر و کیفیت عملکرد.</p><a href="#contact">مشاهده جزئیات ↗</a></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS: original project cards preserved -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="projects-heading"><div><p class="eyebrow">نمونه‌کارها</p><h2>پروژه‌های انجام‌شده</h2></div><a href="#contact" class="btn btn-primary">شروع یک پروژه <span>←</span></a></div>
+      <p class="section-sub">روی هر پروژه کلیک کنید تا عکس‌ها و اطلاعات مربوط به آن را ببینید.</p>
+
       <div class="projects-grid" id="projectsGrid">
 
         <article class="project-card"
@@ -709,75 +735,69 @@
           </div>
         </article>
 
-      </div>
-
-      <button class="btn btn-ghost load-more" id="loadMoreBtn">نمایش پروژه‌های بیشتر</button>
+      </div>      <button class="btn btn-outline load-more" id="loadMoreBtn">نمایش پروژه‌های بیشتر</button>
     </div>
   </section>
 
-  <!-- ============ تماس با ما ============ -->
-  <section id="contact" class="contact">
-    <div class="contact-inner">
-      <h2 class="section-title">ثبت سفارش / عضویت</h2>
-      <p class="section-sub">برای سفارش پروژه یا عضویت در گروه‌های اطلاع‌رسانی، فرم زیر را پر کنید.</p>
+  <!-- WHY / KNOWLEDGE -->
+  <section class="knowledge-section section-dark">
+    <div class="container knowledge-grid">
+      <div class="knowledge-image" style="background-image:url('{% static 'media/(5).jpg' %}')"><span>BEHROOZ SANAT</span></div>
+      <div class="knowledge-copy">
+        <p class="eyebrow">آنچه باید بدانید</p>
+        <h2>قبل از ساخت قالب،<br><strong>جزئیات را درست می‌کنیم.</strong></h2>
+        <div class="knowledge-box"><b>دقت ابعادی</b><span>ابعاد نهایی و تلرانس‌ها باید از ابتدا مشخص باشند.</span></div>
+        <div class="knowledge-box"><b>نوع استفاده</b><span>تعداد دفعات استفاده و شرایط تولید روی انتخاب متریال و ساخت اثر دارد.</span></div>
+        <div class="knowledge-box"><b>نگهداری</b><span>ساخت اصولی باعث می‌شود قالب برای مدت طولانی قابل استفاده باقی بماند.</span></div>
+      </div>
+    </div>
+    <div class="container stats-grid">
+      <div><strong>25+</strong><span>سال سابقه</span></div>
+      <div><strong>100+</strong><span>پروژه و سفارش</span></div>
+      <div><strong>55+</strong><span>نمونه‌کار قابل نمایش</span></div>
+      <div><strong>1</strong><span>هدف: اجرای دقیق</span></div>
+    </div>
+  </section>
 
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="container contact-grid">
+      <div class="contact-intro">
+        <p class="eyebrow">تماس با ما</p>
+        <h2>پروژه بعدی شما<br><strong>از یک گفتگو شروع می‌شود.</strong></h2>
+        <p>اگر نقشه، ابعاد یا توضیحی از پروژه دارید، اطلاعات را ارسال کنید تا برای بررسی و هماهنگی با شما تماس بگیریم.</p>
+        <div class="contact-note"><span>✦</span><p><b>طراحی سفارشی</b><br>اگر دکمه یا متن دیگری لازم بود، می‌توانید بعداً آن را تغییر دهید.</p></div>
+      </div>
       <form id="contactForm" class="contact-form" novalidate>
-        <div class="form-row">
-          <label for="employerName">نام کارفرما <span class="req">*</span></label>
-          <input type="text" id="employerName" name="employerName" required>
-          <span class="error-msg" data-for="employerName"></span>
+        <div class="form-grid">
+          <div class="form-row"><label for="employerName">نام کارفرما <span class="req">*</span></label><input type="text" id="employerName" name="employerName" placeholder="نام و نام خانوادگی" required><span class="error-msg" data-for="employerName"></span></div>
+          <div class="form-row"><label for="companyName">نام شرکت</label><input type="text" id="companyName" name="companyName" placeholder="نام شرکت / مجموعه"></div>
+          <div class="form-row"><label for="phone">شماره تلفن <span class="req">*</span></label><input type="tel" id="phone" name="phone" placeholder="شماره تماس" required inputmode="numeric"><span class="error-msg" data-for="phone"></span></div>
+          <div class="form-row"><label for="email">ایمیل</label><input type="email" id="email" name="email" placeholder="example@email.com"><span class="error-msg" data-for="email"></span></div>
         </div>
-
-        <div class="form-row">
-          <label for="companyName">نام شرکت</label>
-          <input type="text" id="companyName" name="companyName">
-        </div>
-
-        <div class="form-row">
-          <label for="projectDesc">توضیح پروژه</label>
-          <textarea id="projectDesc" name="projectDesc" rows="4"></textarea>
-        </div>
-
-        <div class="form-row">
-          <label for="phone">شماره تلفن <span class="req">*</span></label>
-          <input type="tel" id="phone" name="phone" required inputmode="numeric">
-          <span class="error-msg" data-for="phone"></span>
-        </div>
-
-        <div class="form-row">
-          <label for="email">ایمیل</label>
-          <input type="email" id="email" name="email">
-          <span class="error-msg" data-for="email"></span>
-        </div>
-
-        <!-- COMMENT: در حال حاضر این فرم فقط سمت کلاینت اعتبارسنجی میشه و پیام موفقیت نشون میده.
-             وقتی بک‌اند جنگو رو وصل کردیم، اکشن این فرم (تابع handleSubmit در script.js) باید
-             یک درخواست POST به endpoint جنگو بفرسته. -->
-        <button type="submit" class="btn btn-primary">ارسال درخواست</button>
+        <div class="form-row"><label for="projectDesc">توضیح پروژه</label><textarea id="projectDesc" name="projectDesc" rows="5" placeholder="نوع قالب، ابعاد، تعداد یا توضیح مختصر پروژه..."></textarea></div>
+        <button type="submit" class="btn btn-primary">ارسال درخواست <span>←</span></button>
         <p class="form-success" id="formSuccess" hidden>درخواست شما با موفقیت ثبت شد. به‌زودی با شما تماس می‌گیریم.</p>
       </form>
     </div>
   </section>
-
 </main>
 
 <footer class="site-footer">
-  <!-- COMMENT: اطلاعات تماس واقعی (آدرس، شماره، شبکه‌های اجتماعی) رو اینجا بذار -->
-  <p>© <span id="year"></span> [ نام کسب‌وکار ] — تمام حقوق محفوظ است.</p>
+  <div class="container footer-top">
+    <div><a href="#home" class="footer-logo">بهروز صنعت</a><p>قالب‌سازی فلزی و جوش‌کاری صنعتی برای پروژه‌های پیش‌ساخته بتنی.</p></div>
+    <div><h4>لینک‌های سریع</h4><a href="#about">درباره ما</a><a href="#services">خدمات</a><a href="#projects">پروژه‌ها</a></div>
+    <div><h4>ارتباط</h4><a href="#contact">ثبت سفارش</a><span>شماره تماس — بعداً اضافه شود</span><span>آدرس کارگاه — بعداً اضافه شود</span></div>
+  </div>
+  <div class="container footer-bottom"><span>© <span id="year"></span> بهروز صنعت — تمام حقوق محفوظ است.</span><span>PRECISION · CRAFT · RELIABILITY</span></div>
 </footer>
 
-<!-- ============ لایت‌باکس گالری ============ -->
 <div class="lightbox" id="lightbox" hidden>
   <button class="lightbox-close" id="lightboxClose" aria-label="بستن">×</button>
   <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="قبلی">‹</button>
-  <div class="lightbox-body">
-    <div class="lightbox-media" id="lightboxMedia"></div>
-    <h3 class="lightbox-title" id="lightboxTitle"></h3>
-    <p class="lightbox-desc" id="lightboxDesc"></p>
-  </div>
+  <div class="lightbox-body"><div class="lightbox-media" id="lightboxMedia"></div><h3 class="lightbox-title" id="lightboxTitle"></h3><p class="lightbox-desc" id="lightboxDesc"></p></div>
   <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="بعدی">›</button>
 </div>
-
 <script src="{% static 'script.js' %}"></script>
 </body>
 </html>
