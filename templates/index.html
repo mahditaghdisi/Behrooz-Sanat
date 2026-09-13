@@ -15,7 +15,8 @@
 <header class="site-header">
   <div class="nav-wrap">
     <a href="#home" class="logo" aria-label="بهروز صنعت">
-      <span class="logo-mark" aria-hidden="true"><i></i></span>
+      <img class="logo-mark" src="{% static 'media/icon.png' %}" alt="" srcset="">
+      {% comment %} <span aria-hidden="true"><img class="logo-mark" src="{% static 'media/icon.png' %}" alt="" srcset=""></span> {% endcomment %}
       <span class="logo-text">بهروز صنعت<small>قالب‌سازی و جوش‌کاری</small></span>
     </a>
     <nav class="main-nav" id="mainNav">
@@ -32,33 +33,34 @@
 
 <main>
   <!-- HERO -->
-  <section id="home" class="hero" style="--hero-image:url('{% static 'media/(1).jpg' %}')">
+  <section id="home" class="hero" style="--hero-image:url('{% static 'media/60.jfif' %}')">
     <div class="hero-overlay"></div>
     <div class="hero-content container">
       <div class="hero-copy">
         <p class="eyebrow">قالب‌سازی فلزی برای صنعت پیش‌ساخته بتنی</p>
-        <h1>از فولاد تا قالب،<br><strong>از قالب تا قطعه‌ی دقیق.</strong></h1>
-        <p class="hero-desc">طراحی و ساخت قالب‌های فلزی دقیق برای قطعات بتنی پیش‌ساخته، با جوش‌کاری صنعتی و اجرای سفارشی بر اساس نقشه‌ی کارفرما.</p>
+        <h1>از فولاد تا قالب<br><strong>از قالب تا قطعه‌ی بتنی</strong></h1>
+        <p class="hero-desc">طراحی و ساخت قالب‌های فلزی دقیق برای قطعات بتنی پیش‌ساخته، با جوش‌کاری صنعتی و اجرای سفارشی بر اساس نقشه‌ی کارفرما</p>
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">دیدن پروژه‌ها <span>←</span></a>
+          <a href="#projects" class="btn btn-primary">دیدن پروژه‌ها </a>
           <a href="#contact" class="btn btn-outline">ثبت سفارش</a>
         </div>
       </div>
       <div class="hero-badge">
-        <strong>25+</strong>
+        <strong>۲۵</strong>
         <span>سال تجربه<br>در صنعت</span>
       </div>
     </div>
-    <div class="hero-scroll">اسکرول کنید <span></span></div>
+    {% comment %} <div class="hero-scroll">اسکرول کنید <span></span></div> {% endcomment %}
   </section>
 
   <!-- FEATURE STRIP -->
   <section class="feature-strip">
     <div class="container feature-grid">
-      <div class="feature-item"><span class="feature-icon">✦</span><div><b>کیفیت و دوام</b><small>ساخت صنعتی با دقت بالا</small></div></div>
-      <div class="feature-item"><span class="feature-icon">▣</span><div><b>طراحی سفارشی</b><small>مطابق نقشه و نیاز پروژه</small></div></div>
-      <div class="feature-item"><span class="feature-icon">⌁</span><div><b>جوش‌کاری حرفه‌ای</b><small>اتصالات تمیز و مستحکم</small></div></div>
-      <div class="feature-item"><span class="feature-icon">◈</span><div><b>تحویل پروژه</b><small>پیگیری از ساخت تا اجرا</small></div></div>
+      <div class="feature-item"><span class="feature-icon"><svg style="fill: #ef3f35;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M232.5 136L320 229L407.5 136L232.5 136zM447.9 163.1L375.6 240L504.6 240L448 163.1zM497.9 288L142.1 288L320 484.3L497.9 288zM135.5 240L264.5 240L192.2 163.1L135.6 240zM569.8 280.1L337.8 536.1C333.3 541.1 326.8 544 320 544C313.2 544 306.8 541.1 302.2 536.1L70.2 280.1C62.5 271.6 61.9 258.9 68.7 249.7L180.7 97.7C185.2 91.6 192.4 87.9 200 87.9L440 87.9C447.6 87.9 454.8 91.5 459.3 97.7L571.3 249.7C578.1 258.9 577.4 271.6 569.8 280.1z"/></svg></span><div><b>کیفیت و دوام</b><small>ساخت صنعتی با دقت بالا</small></div></div>
+      <div class="feature-item"><span class="feature-icon"><svg style="fill: #ef3f35;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M295.4 37L310.2 73.8L347 88.6C350 89.8 352 92.8 352 96C352 99.2 350 102.2 347 103.4L310.2 118.2L295.4 155C294.2 158 291.2 160 288 160C284.8 160 281.8 158 280.6 155L265.8 118.2L229 103.4C226 102.2 224 99.2 224 96C224 92.8 226 89.8 229 88.6L265.8 73.8L280.6 37C281.8 34 284.8 32 288 32C291.2 32 294.2 34 295.4 37zM142.7 105.7L164.2 155.8L214.3 177.3C220.2 179.8 224 185.6 224 192C224 198.4 220.2 204.2 214.3 206.7L164.2 228.2L142.7 278.3C140.2 284.2 134.4 288 128 288C121.6 288 115.8 284.2 113.3 278.3L91.8 228.2L41.7 206.7C35.8 204.2 32 198.4 32 192C32 185.6 35.8 179.8 41.7 177.3L91.8 155.8L113.3 105.7C115.8 99.8 121.6 96 128 96C134.4 96 140.2 99.8 142.7 105.7zM496 368C502.4 368 508.2 371.8 510.7 377.7L532.2 427.8L582.3 449.3C588.2 451.8 592 457.6 592 464C592 470.4 588.2 476.2 582.3 478.7L532.2 500.2L510.7 550.3C508.2 556.2 502.4 560 496 560C489.6 560 483.8 556.2 481.3 550.3L459.8 500.2L409.7 478.7C403.8 476.2 400 470.4 400 464C400 457.6 403.8 451.8 409.7 449.3L459.8 427.8L481.3 377.7C483.8 371.8 489.6 368 496 368zM492 64C503 64 513.6 68.4 521.5 76.2L563.8 118.5C571.6 126.4 576 137 576 148C576 159 571.6 169.6 563.8 177.5L475.6 265.7L374.3 164.4L462.5 76.2C470.4 68.4 481 64 492 64zM76.2 462.5L340.4 198.3L441.7 299.6L177.5 563.8C169.6 571.6 159 576 148 576C137 576 126.4 571.6 118.5 563.8L76.2 521.5C68.4 513.6 64 503 64 492C64 481 68.4 470.4 76.2 462.5z"/></svg></span><div><b>طراحی سفارشی</b><small>مطابق نقشه و نیاز پروژه</small></div></div>
+      <div class="feature-item"><span class="feature-icon"><svg style="fill: #ef3f35;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M415.9 274.5C428.1 271.2 440.9 277 446.4 288.3L465 325.9C475.3 327.3 485.4 330.1 494.9 334L529.9 310.7C540.4 303.7 554.3 305.1 563.2 314L582.4 333.2C591.3 342.1 592.7 356.1 585.7 366.5L562.4 401.4C564.3 406.1 566 411 567.4 416.1C568.8 421.2 569.7 426.2 570.4 431.3L608.1 449.9C619.4 455.5 625.2 468.3 621.9 480.4L614.9 506.6C611.6 518.7 600.3 526.9 587.7 526.1L545.7 523.4C539.4 531.5 532.1 539 523.8 545.4L526.5 587.3C527.3 599.9 519.1 611.3 507 614.5L480.8 621.5C468.6 624.8 455.9 619 450.3 607.7L431.7 570.1C421.4 568.7 411.3 565.9 401.8 562L366.8 585.3C356.3 592.3 342.4 590.9 333.5 582L314.3 562.8C305.4 553.9 304 540 311 529.5L334.3 494.5C332.4 489.8 330.7 484.9 329.3 479.8C327.9 474.7 327 469.6 326.3 464.6L288.6 446C277.3 440.4 271.6 427.6 274.8 415.5L281.8 389.3C285.1 377.2 296.4 369 309 369.8L350.9 372.5C357.2 364.4 364.5 356.9 372.8 350.5L370.1 308.7C369.3 296.1 377.5 284.7 389.6 281.5L415.8 274.5zM448.4 404C424.1 404 404.4 423.7 404.5 448.1C404.5 472.4 424.2 492 448.5 492C472.8 492 492.5 472.3 492.5 448C492.4 423.6 472.7 404 448.4 404zM224.9 18.5L251.1 25.5C263.2 28.8 271.4 40.2 270.6 52.7L267.9 94.5C276.2 100.9 283.5 108.3 289.8 116.5L331.8 113.8C344.3 113 355.7 121.2 359 133.3L366 159.5C369.2 171.6 363.5 184.4 352.2 190L314.5 208.6C313.8 213.7 312.8 218.8 311.5 223.8C310.2 228.8 308.4 233.8 306.5 238.5L329.8 273.5C336.8 284 335.4 297.9 326.5 306.8L307.3 326C298.4 334.9 284.5 336.3 274 329.3L239 306C229.5 309.9 219.4 312.7 209.1 314.1L190.5 351.7C184.9 363 172.1 368.7 160 365.5L133.8 358.5C121.6 355.2 113.5 343.8 114.3 331.3L117 289.4C108.7 283 101.4 275.6 95.1 267.4L53.1 270.1C40.6 270.9 29.2 262.7 25.9 250.6L18.9 224.4C15.7 212.3 21.4 199.5 32.7 193.9L70.4 175.3C71.1 170.2 72.1 165.2 73.4 160.1C74.8 155 76.4 150.1 78.4 145.4L55.1 110.5C48.1 100 49.5 86.1 58.4 77.2L77.6 58C86.5 49.1 100.4 47.7 110.9 54.7L145.9 78C155.4 74.1 165.5 71.3 175.8 69.9L194.4 32.3C200 21 212.7 15.3 224.9 18.5zM192.4 148C168.1 148 148.4 167.7 148.4 192C148.4 216.3 168.1 236 192.4 236C216.7 236 236.4 216.3 236.4 192C236.4 167.7 216.7 148 192.4 148z"/></svg></span><div><b>جوش‌کاری حرفه‌ای</b><small>اتصالات تمیز و مستحکم</small></div></div>
+      <div class="feature-item"><span class="feature-icon"><svg style="fill: #ef3f35;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M96 176C96 131.8 131.8 96 176 96L464 96C508.2 96 544 131.8 544 176L544 432C544 458.2 531.4 481.4 512 496L512 544C512 561.7 497.7 576 480 576L448 576C430.3 576 416 561.7 416 544L416 512L224 512L224 544C224 561.7 209.7 576 192 576L160 576C142.3 576 128 561.7 128 544L128 496C108.6 481.4 96 458.2 96 432L96 176zM192 256L192 320L448 320L448 256C448 238.3 433.7 224 416 224L224 224C206.3 224 192 238.3 192 256zM224 416C224 398.3 209.7 384 192 384C174.3 384 160 398.3 160 416C160 433.7 174.3 448 192 448C209.7 448 224 433.7 224 416zM448 448C465.7 448 480 433.7 480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416C416 433.7 430.3 448 448 448z"/></svg></span><div><b>تحویل پروژه</b><small>پیگیری از ساخت تا اجرا</small></div></div>
+
     </div>
   </section>
 
@@ -66,58 +68,59 @@
   <section id="about" class="split-section section-dark">
     <div class="container split-grid">
       <div class="image-frame accent-frame">
-        <img src="{% static 'media/(2).jpg' %}" alt="نمونه کار قالب‌سازی">
-        <span class="frame-label">BEHROOZ SANAT / WORKSHOP</span>
+        <img src="{% static 'media/59.jfif' %}" alt="نمونه کار قالب‌سازی">
+        {% comment %} <span class="frame-label">مدیر عامل: علی‌رضا تقدیسی</span> {% endcomment %}
+        <span class="frame-label">نام قالب: کنج</span>
       </div>
       <div class="split-copy">
         <p class="eyebrow">درباره ما</p>
-        <h2>مهارت در ساخت،<br><strong>دقت در اجرا</strong></h2>
-        <p>این کارگاه سال‌هاست در زمینه‌ی قالب‌سازی فلزی و جوش‌کاری صنعتی فعالیت می‌کند. قالب‌هایی که اینجا ساخته می‌شوند برای ریخته‌گری بتن استفاده می‌شوند و به تولید قطعات پیش‌ساخته‌ی بتنی با دقت ابعادی بالا منجر می‌گردند.</p>
-        <p>از بررسی نقشه تا برش، مونتاژ، جوش‌کاری و آماده‌سازی نهایی، هر مرحله با تمرکز روی دوام، دقت و قابلیت استفاده‌ی مکرر قالب انجام می‌شود.</p>
-        <a href="#contact" class="text-link">درباره پروژه خود صحبت کنیم <span>←</span></a>
+        <h2>مهارت در ساخت<br><strong>دقت در اجرا</strong></h2>
+        <p>کارگاه ما سال‌هاست در زمینه‌ی قالب‌سازی فلزی و جوش‌کاری صنعتی فعالیت می‌کند. قالب‌هایی که اینجا ساخته می‌شوند برای ریخته‌گری بتن استفاده می‌شوند و به تولید قطعات پیش‌ساخته‌ی بتنی با دقت بالا منجر می‌گردند</p>
+        <p>از بررسی نقشه تا برش، مونتاژ، جوش‌کاری و آماده‌سازی نهایی، هر مرحله با تمرکز روی دوام، دقت و قابلیت استفاده‌ی مکرر قالب انجام می‌شود</p>
+        <a href="#contact" class="text-link">درباره پروژه خود صحبت کنید</a>
       </div>
     </div>
   </section>
 
-  <section class="trusted-bar">
+  {% comment %} <section class="trusted-bar">
     <div class="container trusted-inner">
       <span>اعتماد ساخته می‌شود؛ با کیفیت، دقت و تحویل درست.</span>
       <div class="trusted-lines"><b>PRECISION</b><b>CRAFT</b><b>RELIABILITY</b><b>INDUSTRIAL</b></div>
     </div>
-  </section>
+  </section> {% endcomment %}
 
   <section class="statement-section">
     <div class="container statement-grid">
       <div class="statement-copy">
         <p class="eyebrow">رویکرد ما</p>
-        <h2>هر اتصال مهم است.<br><strong>هر قالب برای کار ساخته می‌شود.</strong></h2>
-        <p>هدف فقط ساخت یک قطعه فلزی نیست؛ قالب باید در محیط واقعی تولید، دقیق، قابل اعتماد و قابل استفاده‌ی مجدد باشد.</p>
+        <h2>هر اتصال مهم است<br><strong>هر قالب برای کار ساخته می‌شود</strong></h2>
+        <p>هدف فقط ساخت یک قطعه فلزی نیست؛ قالب باید در محیط واقعی تولید، دقیق، قابل اعتماد و قابل استفاده‌ی مجدد باشد</p>
         <div class="check-list">
           <div><span>✓</span><p><b>بررسی نیاز پروژه</b><small>ابعاد، کاربرد و شرایط تولید قبل از ساخت بررسی می‌شود.</small></p></div>
           <div><span>✓</span><p><b>اجرای دقیق</b><small>برش، مونتاژ و جوش‌کاری با تمرکز بر دقت ابعادی.</small></p></div>
           <div><span>✓</span><p><b>کنترل نهایی</b><small>قبل از تحویل، کیفیت ساخت و عملکرد قالب بررسی می‌شود.</small></p></div>
         </div>
       </div>
-      <div class="portrait-panel" style="background-image:url('{% static 'media/(3).jpg' %}')">
-        <div class="portrait-caption"><small>WORKSHOP</small><b>CRAFTED<br>TO PERFORM</b></div>
+      <div class="portrait-panel" style="background-image:url('{% static 'media/56.jpg' %}')">
+        <div class="portrait-caption"><small>نام سازه: یادمان شهدا - دانشگاه فردوسی</small></div>
       </div>
     </div>
   </section>
 
-  <section class="wide-banner" style="--banner-image:url('{% static 'media/(4).jpg' %}')">
+  <section class="wide-banner" style="--banner-image:url('{% static 'media/57.jfif' %}')">
     <div class="wide-banner-overlay"></div>
-    <div class="container wide-banner-content"><span>WELDING / FORMING / FABRICATION</span><h2>آینده‌ی ساخت<br><strong>از کارگاه شروع می‌شود.</strong></h2></div>
+    <div class="container wide-banner-content"><span>جوشکاری تخصصی / شکل‌دهی دقیق / ساخت و تولید</span><h2>آینده‌ی ساخت<br><strong>از کارگاه شروع می‌شود</strong></h2></div>
   </section>
 
   <!-- SERVICES -->
   <section id="services" class="services-section section-dark">
     <div class="container">
-      <div class="section-heading centered"><p class="eyebrow">خدمات ما</p><h2>راهکارهای صنعتی برای<br><strong>پروژه‌های شما</strong></h2><p>خدمات را می‌توانید بعداً با اطلاعات واقعی کارگاه و دسته‌بندی‌های موردنظر خودتان ویرایش کنید.</p></div>
+      <div class="section-heading centered"><p class="eyebrow">خدمات ما</p><h2>راهکارهای صنعتی برای<br><strong>پروژه‌های شما</strong></h2></div>
       <div class="services-grid">
-        <article class="service-card"><span>01</span><h3>ساخت قالب فلزی</h3><p>ساخت قالب‌های سفارشی برای قطعات بتنی پیش‌ساخته با تمرکز بر دقت و استحکام.</p><a href="#contact">مشاهده جزئیات ↗</a></article>
-        <article class="service-card"><span>02</span><h3>جوش‌کاری صنعتی</h3><p>اجرای اتصالات و سازه‌های فلزی با توجه به کاربرد، ابعاد و شرایط پروژه.</p><a href="#contact">مشاهده جزئیات ↗</a></article>
-        <article class="service-card"><span>03</span><h3>ساخت سفارشی</h3><p>تبدیل نقشه و نیاز کارفرما به محصول قابل ساخت و آماده‌ی استفاده در خط تولید.</p><a href="#contact">مشاهده جزئیات ↗</a></article>
-        <article class="service-card"><span>04</span><h3>اصلاح و بازسازی</h3><p>بررسی و اصلاح قالب‌ها و قطعات فلزی موجود برای افزایش عمر و کیفیت عملکرد.</p><a href="#contact">مشاهده جزئیات ↗</a></article>
+        <article class="service-card"><h3>ساخت قالب فلزی</h3><p>ساخت قالب‌های سفارشی برای قطعات بتنی پیش‌ساخته با تمرکز بر دقت و استحکام.</p></article>
+        <article class="service-card"><h3>جوش‌کاری صنعتی</h3><p>اجرای اتصالات و سازه‌های فلزی با توجه به کاربرد، ابعاد و شرایط پروژه.</p></article>
+        <article class="service-card"><h3>ساخت سفارشی</h3><p>تبدیل نقشه و نیاز کارفرما به محصول قابل ساخت و آماده‌ی استفاده در خط تولید.</p></article>
+        <article class="service-card"><h3>اصلاح و بازسازی</h3><p>بررسی و اصلاح قالب‌ها و قطعات فلزی موجود برای افزایش عمر و کیفیت عملکرد.</p></article>
       </div>
     </div>
   </section>
@@ -125,30 +128,30 @@
   <!-- PROJECTS: original project cards preserved -->
   <section id="projects" class="projects-section">
     <div class="container">
-      <div class="projects-heading"><div><p class="eyebrow">نمونه‌کارها</p><h2>پروژه‌های انجام‌شده</h2></div><a href="#contact" class="btn btn-primary">شروع یک پروژه <span>←</span></a></div>
+      <div class="projects-heading"><div><p class="eyebrow">نمونه‌کارها</p><h2>پروژه‌های انجام‌شده</h2></div><a href="#contact" class="btn btn-primary">شروع یک پروژه </a></div>
       <p class="section-sub">روی هر پروژه کلیک کنید تا عکس‌ها و اطلاعات مربوط به آن را ببینید.</p>
 
       <div class="projects-grid" id="projectsGrid">
 
         <article class="project-card"
-          data-title="پروژه شماره 1"
+          data-title="پروژه تونل انرژی"
           data-desc="توضیح پروژه شماره 1 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
           data-media="{% static 'media/(1).jpg' %}">
-          <img class="card-thumb" src="{% static 'media/(1).jpg' %}" alt="پروژه شماره 1">
+          <img class="card-thumb" src="{% static 'media/(1).jpg' %}" alt="پروژه تونل انرژی">
           <div class="card-body">
-            <h3>پروژه شماره 1</h3>
+            <h3>پروژه تونل انرژی</h3>
             <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
           </div>
         </article>
 
         <article class="project-card"
-          data-title="پروژه شماره 2"
+          data-title="قالب کنج "
           data-desc="توضیح پروژه شماره 2 را اینجا بنویس: نوع قالب، ابعاد، کارفرما، مدت اجرا و..."
           data-media="{% static 'media/(2).jpg' %}">
           <img class="card-thumb" src="{% static 'media/(2).jpg' %}" alt="پروژه شماره 2">
           <div class="card-body">
-            <h3>پروژه شماره 2</h3>
-            <p>یک خط توضیح کوتاه درباره‌ی این پروژه</p>
+            <h3>قالب کنج </h3>
+            <p>جهت استفاده برای بستن کنج زمین ها</p>
           </div>
         </article>
 
@@ -742,20 +745,20 @@
   <!-- WHY / KNOWLEDGE -->
   <section class="knowledge-section section-dark">
     <div class="container knowledge-grid">
-      <div class="knowledge-image" style="background-image:url('{% static 'media/(5).jpg' %}')"><span>BEHROOZ SANAT</span></div>
+      <div class="knowledge-image" style="background-image:url('{% static 'media/58.jfif' %}')"><span>پل میدان آزادی</span></div>
       <div class="knowledge-copy">
         <p class="eyebrow">آنچه باید بدانید</p>
-        <h2>قبل از ساخت قالب،<br><strong>جزئیات را درست می‌کنیم.</strong></h2>
+        <h2>قبل از ساخت قالب<br><strong>جزئیات را درست می‌کنیم</strong></h2>
         <div class="knowledge-box"><b>دقت ابعادی</b><span>ابعاد نهایی و تلرانس‌ها باید از ابتدا مشخص باشند.</span></div>
         <div class="knowledge-box"><b>نوع استفاده</b><span>تعداد دفعات استفاده و شرایط تولید روی انتخاب متریال و ساخت اثر دارد.</span></div>
         <div class="knowledge-box"><b>نگهداری</b><span>ساخت اصولی باعث می‌شود قالب برای مدت طولانی قابل استفاده باقی بماند.</span></div>
       </div>
     </div>
     <div class="container stats-grid">
-      <div><strong>25+</strong><span>سال سابقه</span></div>
-      <div><strong>100+</strong><span>پروژه و سفارش</span></div>
-      <div><strong>55+</strong><span>نمونه‌کار قابل نمایش</span></div>
-      <div><strong>1</strong><span>هدف: اجرای دقیق</span></div>
+      <div><strong>بیش از ۲۵</strong><span>سال سابقه</span></div>
+      <div><strong>یبش از ۵۰</strong><span>پروژه و سفارش</span></div>
+      <div><strong>بیش از ۵۰</strong><span>نمونه‌کار قابل نمایش</span></div>
+      <div><strong>۱</strong><span>هدف: اجرای دقیق</span></div>
     </div>
   </section>
 
@@ -766,7 +769,7 @@
         <p class="eyebrow">تماس با ما</p>
         <h2>پروژه بعدی شما<br><strong>از یک گفتگو شروع می‌شود.</strong></h2>
         <p>اگر نقشه، ابعاد یا توضیحی از پروژه دارید، اطلاعات را ارسال کنید تا برای بررسی و هماهنگی با شما تماس بگیریم.</p>
-        <div class="contact-note"><span>✦</span><p><b>طراحی سفارشی</b><br>اگر دکمه یا متن دیگری لازم بود، می‌توانید بعداً آن را تغییر دهید.</p></div>
+        {% comment %} <div class="contact-note"><span>✦</span><p><b>طراحی سفارشی</b><br>اگر دکمه یا متن دیگری لازم بود، می‌توانید بعداً آن را تغییر دهید.</p></div> {% endcomment %}
       </div>
       <form id="contactForm" class="contact-form" novalidate>
         <div class="form-grid">
@@ -776,7 +779,7 @@
           <div class="form-row"><label for="email">ایمیل</label><input type="email" id="email" name="email" placeholder="example@email.com"><span class="error-msg" data-for="email"></span></div>
         </div>
         <div class="form-row"><label for="projectDesc">توضیح پروژه</label><textarea id="projectDesc" name="projectDesc" rows="5" placeholder="نوع قالب، ابعاد، تعداد یا توضیح مختصر پروژه..."></textarea></div>
-        <button type="submit" class="btn btn-primary">ارسال درخواست <span>←</span></button>
+        <button type="submit" class="btn btn-primary">ارسال درخواست </button>
         <p class="form-success" id="formSuccess" hidden>درخواست شما با موفقیت ثبت شد. به‌زودی با شما تماس می‌گیریم.</p>
       </form>
     </div>
@@ -787,9 +790,9 @@
   <div class="container footer-top">
     <div><a href="#home" class="footer-logo">بهروز صنعت</a><p>قالب‌سازی فلزی و جوش‌کاری صنعتی برای پروژه‌های پیش‌ساخته بتنی.</p></div>
     <div><h4>لینک‌های سریع</h4><a href="#about">درباره ما</a><a href="#services">خدمات</a><a href="#projects">پروژه‌ها</a></div>
-    <div><h4>ارتباط</h4><a href="#contact">ثبت سفارش</a><span>شماره تماس — بعداً اضافه شود</span><span>آدرس کارگاه — بعداً اضافه شود</span></div>
+    <div><h4>ارتباط</h4><a href="#contact">ثبت سفارش</a><a href="tel:+989154002651">شماره تماس: ۲۶۵۱-۴۰۰-۰۹۱۵</a><span>آدرس کارگاه: مشهد، بلوار شاهنامه</span></div>
   </div>
-  <div class="container footer-bottom"><span>© <span id="year"></span> بهروز صنعت — تمام حقوق محفوظ است.</span><span>PRECISION · CRAFT · RELIABILITY</span></div>
+  <div class="container footer-bottom"><span>© <span id="year"></span> بهروز صنعت — تمام حقوق محفوظ است.</span><span>طراح سایت: <a href="mailto:mahditaghdisi650@gmail.com">مهدی تقدیسی</a></span></div>
 </footer>
 
 <div class="lightbox" id="lightbox" hidden>
