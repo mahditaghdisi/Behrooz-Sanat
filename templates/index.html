@@ -4,13 +4,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="{% static 'media/icon.png' %}">
-<title>بهروز صنعت | قالب‌سازی و جوش‌کاری</title>
+<meta name="description" content="بهروز صنعت، مجموعه علی‌رضا تقدیسی در زمینه طراحی قالب، قطعات پیش‌ساخته بتنی، قالب صنعتی، جوشکاری صنعتی، قالب تونل، قالب پل، قالب نیوجرسی، قالب دیوار خودایستا، کارگاه صنعتی و قالب بتنی.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="علی‌رضا تقدیسی - بهروز صنعت">
+<link rel="canonical" href="https://www.behroozsanat.ir/">
+{% comment %} ایکون سرچ گوگل - Google Search Favicon {% endcomment %}
+<link rel="icon" type="image/png" sizes="48x48" href="{% static 'media/icon.png' %}">
+<link rel="apple-touch-icon" href="{% static 'media/icon.png' %}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.behroozsanat.ir/">
+<meta property="og:title" content="بهروز صنعت | طراحی قالب و جوشکاری صنعتی | علی‌رضا تقدیسی">
+<meta property="og:description" content="طراحی و ساخت قالب‌های فلزی، قالب‌های بتنی و خدمات جوشکاری صنعتی برای پروژه‌های پیش‌ساخته بتنی.">
+<meta property="og:image" content="https://www.behroozsanat.ir/static/media/icon.png">
+<meta property="og:locale" content="fa_IR">
+<title>بهروز صنعت | طراحی قالب و جوشکاری صنعتی | علی‌رضا تقدیسی</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "بهروز صنعت",
+  "alternateName": "بهروز صنعت علی‌رضا تقدیسی",
+  "url": "https://www.behroozsanat.ir/",
+  "logo": "https://www.behroozsanat.ir/static/media/icon.png",
+  "image": "https://www.behroozsanat.ir/static/media/icon.png",
+  "description": "طراحی و ساخت قالب‌های فلزی، قالب‌های بتنی و جوشکاری صنعتی برای قطعات پیش‌ساخته بتنی.",
+  "founder": {
+    "@type": "Person",
+    "name": "علی‌رضا تقدیسی"
+  },
+  "areaServed": "ایران",
+  "knowsAbout": [
+    "طراحی قالب",
+    "قطعات پیش ساخته بتنی",
+    "قالب صنعتی",
+    "جوشکاری صنعتی",
+    "قالب تونل",
+    "قالب پل",
+    "قالب نیوجرسی",
+    "قالب دیوار خودایستا",
+    "کارگاه صنعتی",
+    "قالب بتنی"
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
-<body>
+<body data-theme="dark">
 
 <header class="site-header">
   <div class="nav-wrap">
@@ -26,6 +67,9 @@
       <a href="#projects">پروژه‌ها</a>
       <a href="#contact">تماس با ما</a>
     </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="تغییر تم" title="تغییر تم">
+      <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+    </button>
     <a class="header-cta" href="#contact">ثبت سفارش</a>
     <button class="nav-toggle" id="navToggle" aria-label="باز و بسته کردن منو" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
@@ -38,16 +82,18 @@
     <div class="hero-content container">
       <div class="hero-copy">
         <p class="eyebrow">قالب‌سازی فلزی برای صنعت پیش‌ساخته بتنی</p>
-        <h1>از فولاد تا قالب<br><strong>از قالب تا قطعه‌ی بتنی</strong></h1>
+        <h1 class="hero-title">
+          <span id="heroMorphText" class="morphing-text" aria-live="polite">از فولاد</span>
+        </h1>
         <p class="hero-desc">طراحی و ساخت قالب‌های فلزی دقیق برای قطعات بتنی پیش‌ساخته، با جوش‌کاری صنعتی و اجرای سفارشی بر اساس نقشه‌ی کارفرما</p>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary">دیدن پروژه‌ها </a>
-          <a href="#contact" class="btn btn-outline">ثبت سفارش</a>
+          <a href="#contact" class="btn btn-outline interactive-hover-btn">ثبت سفارش</a>
         </div>
       </div>
-      <div class="hero-badge">
-        <strong>۲۵</strong>
-        <span>سال تجربه<br>در صنعت</span>
+      <div class="hero-badge dia-badge">
+        <strong><span id="experienceNumber" class="number-ticker" data-value="25">0</span></strong>
+        <span class="dia-text-reveal">سال تجربه<br>در صنعت</span>
       </div>
     </div>
     {% comment %} <div class="hero-scroll">اسکرول کنید <span></span></div> {% endcomment %}
@@ -67,9 +113,11 @@
   <!-- ABOUT / CRAFTSMANSHIP -->
   <section id="about" class="split-section section-dark">
     <div class="container split-grid">
-      <div class="image-frame accent-frame">
-        <img src="{% static 'media/59.jfif' %}" alt="نمونه کار قالب‌سازی">
-        {% comment %} <span class="frame-label">مدیر عامل: علی‌رضا تقدیسی</span> {% endcomment %}
+      <div class="image-frame accent-frame pixel-image-wrap">
+        <div class="pixel-image" id="cornerPixelImage" data-src="{% static 'media/59.jfif' %}">
+          <canvas aria-hidden="true"></canvas>
+          <img class="pixel-image-accessible" src="{% static 'media/59.jfif' %}" alt="نمونه کار قالب‌سازی، نام قالب: کنج">
+        </div>
         <span class="frame-label">نام قالب: کنج</span>
       </div>
       <div class="split-copy">
@@ -77,7 +125,7 @@
         <h2>مهارت در ساخت<br><strong>دقت در اجرا</strong></h2>
         <p>کارگاه ما سال‌هاست در زمینه‌ی قالب‌سازی فلزی و جوش‌کاری صنعتی فعالیت می‌کند. قالب‌هایی که اینجا ساخته می‌شوند برای ریخته‌گری بتن استفاده می‌شوند و به تولید قطعات پیش‌ساخته‌ی بتنی با دقت بالا منجر می‌گردند</p>
         <p>از بررسی نقشه تا برش، مونتاژ، جوش‌کاری و آماده‌سازی نهایی، هر مرحله با تمرکز روی دوام، دقت و قابلیت استفاده‌ی مکرر قالب انجام می‌شود</p>
-        <a href="#contact" class="text-link">درباره پروژه خود صحبت کنید</a>
+        <a href="#contact" class="text-link interactive-hover-btn">درباره پروژه خود صحبت کنید</a>
       </div>
     </div>
   </section>
@@ -738,7 +786,8 @@
           </div>
         </article>
 
-      </div>      <button class="btn btn-outline load-more" id="loadMoreBtn">نمایش پروژه‌های بیشتر</button>
+      </div>
+      <button class="btn btn-outline load-more" id="loadMoreBtn">نمایش پروژه‌های بیشتر</button>
     </div>
   </section>
 
@@ -771,16 +820,17 @@
         <p>اگر نقشه، ابعاد یا توضیحی از پروژه دارید، اطلاعات را ارسال کنید تا برای بررسی و هماهنگی با شما تماس بگیریم.</p>
         {% comment %} <div class="contact-note"><span>✦</span><p><b>طراحی سفارشی</b><br>اگر دکمه یا متن دیگری لازم بود، می‌توانید بعداً آن را تغییر دهید.</p></div> {% endcomment %}
       </div>
-      <form id="contactForm" class="contact-form" novalidate>
+      <form id="contactForm" class="contact-form border-beam" novalidate>
         <div class="form-grid">
           <div class="form-row"><label for="employerName">نام کارفرما <span class="req">*</span></label><input type="text" id="employerName" name="employerName" placeholder="نام و نام خانوادگی" required><span class="error-msg" data-for="employerName"></span></div>
           <div class="form-row"><label for="companyName">نام شرکت</label><input type="text" id="companyName" name="companyName" placeholder="نام شرکت / مجموعه"></div>
-          <div class="form-row"><label for="phone">شماره تلفن <span class="req">*</span></label><input type="tel" id="phone" name="phone" placeholder="شماره تماس" required inputmode="numeric"><span class="error-msg" data-for="phone"></span></div>
+          <div class="form-row"><label for="phone">شماره تلفن <span class="req">*</span></label><input type="tel" id="phone" name="phone" placeholder="شماره تماس" required inputmode="numeric" pattern="[0-9۰-۹+()\- ]*" autocomplete="tel"><span class="error-msg" data-for="phone"></span></div>
           <div class="form-row"><label for="email">ایمیل</label><input type="email" id="email" name="email" placeholder="example@email.com"><span class="error-msg" data-for="email"></span></div>
         </div>
         <div class="form-row"><label for="projectDesc">توضیح پروژه</label><textarea id="projectDesc" name="projectDesc" rows="5" placeholder="نوع قالب، ابعاد، تعداد یا توضیح مختصر پروژه..."></textarea></div>
-        <button type="submit" class="btn btn-primary">ارسال درخواست </button>
-        <p class="form-success" id="formSuccess" hidden>درخواست شما با موفقیت ثبت شد. به‌زودی با شما تماس می‌گیریم.</p>
+        <button type="submit" class="btn btn-primary confetti-button" id="submitOrderBtn">
+          ارسال درخواست <span aria-hidden="true">👍</span>
+        </button>
       </form>
     </div>
   </section>
@@ -801,6 +851,24 @@
   <div class="lightbox-body"><div class="lightbox-media" id="lightboxMedia"></div><h3 class="lightbox-title" id="lightboxTitle"></h3><p class="lightbox-desc" id="lightboxDesc"></p></div>
   <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="بعدی">›</button>
 </div>
-<script src="{% static 'script.js' %}"></script>
+<script src="{% static 'script.js' %}" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js" defer></script>
+
+
+<div class="success-modal" id="successModal" hidden>
+  <div class="success-modal-backdrop" data-success-close></div>
+  <div class="success-modal-card" role="dialog" aria-modal="true" aria-labelledby="successModalTitle">
+    <div class="success-modal-icon" aria-hidden="true">✓</div>
+    <p class="eyebrow">ثبت سفارش</p>
+    <h3 id="successModalTitle">درخواست با موفقیت ثبت شد</h3>
+    <p>اطلاعات شما با موفقیت دریافت شد. به‌زودی برای هماهنگی پروژه با شما تماس می‌گیریم.</p>
+    <button type="button" class="btn btn-primary success-ok" id="successModalOk">OK</button>
+  </div>
+</div>
+
+<!-- Custom cursor: outer circle with moving red inner dot -->
+<div class="smooth-cursor" id="smoothCursor" aria-hidden="true">
+  <span class="smooth-cursor-dot"></span>
+</div>
 </body>
 </html>
