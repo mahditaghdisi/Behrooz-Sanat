@@ -92,27 +92,41 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3200);
   }
 
-  /* ---------- Number Ticker-inspired experience counter ---------- */
+  /* ---------- Number Ticker: robust 0 -> target counter ---------- */
   const numberTicker = document.getElementById('experienceNumber');
-  if (numberTicker && 'IntersectionObserver' in window) {
+  if (numberTicker) {
     const target = Number(numberTicker.dataset.value || 25);
     let started = false;
     const animateNumber = () => {
       if (started) return;
       started = true;
-      const duration = 1300, start = performance.now();
+      const duration = 1300;
+      const start = performance.now();
       const tick = now => {
         const progress = Math.min((now - start) / duration, 1);
         const eased = 1 - Math.pow(1 - progress, 3);
         numberTicker.textContent = String(Math.round(target * eased));
         if (progress < 1) requestAnimationFrame(tick);
+        else numberTicker.textContent = String(target);
       };
       requestAnimationFrame(tick);
     };
-    const observer = new IntersectionObserver(entries => {
-      if (entries.some(entry => entry.isIntersecting)) { animateNumber(); observer.disconnect(); }
-    }, {threshold:.4});
-    observer.observe(numberTicker);
+
+    // Prefer starting when visible, but never leave the counter stuck at 0.
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        if (entries.some(entry => entry.isIntersecting)) {
+          animateNumber();
+          observer.disconnect();
+        }
+      }, {threshold: .15});
+      observer.observe(numberTicker);
+      // If the element is already visible, start immediately as a fallback.
+      const rect = numberTicker.getBoundingClientRect();
+      if (rect.top < innerHeight && rect.bottom > 0) animateNumber();
+    } else {
+      animateNumber();
+    }
   }
 
   /* ---------- Pixel Image-inspired scroll reveal ---------- */
